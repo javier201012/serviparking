@@ -1,6 +1,6 @@
-# Alquiler Caravanas
+# Serviparking
 
-Proyecto base con Vite + React para una web de parking de caravanas.
+Proyecto base con Vite + React para una web de aparcamiento de caravanas.
 
 ## Stack
 
@@ -17,12 +17,12 @@ Proyecto base con Vite + React para una web de parking de caravanas.
 
 ## Estado actual
 
-- Landing inicial en español
-- Estructura preparada para anadir datos reales del negocio
+- Landing inicial en espanol
+- Informacion comercial principal visible desde el bloque inicial
 - Diseño responsive orientado a presentar servicios, ventajas y contacto
 
 ## Siguientes ampliaciones recomendadas
 
-- Sustituir el bloque de contacto por telefono, correo y ubicacion reales
-- Añadir tarifas, disponibilidad y formulario de consulta
+- Añadir formulario de consulta o reserva
 - Integrar mapa, galeria o testimonios si el negocio los necesita
+- Ajustar SEO y textos finales de marca
