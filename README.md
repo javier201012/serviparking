@@ -10,10 +10,22 @@ Proyecto base con Vite + React para una web de aparcamiento de caravanas.
 
 ## Scripts
 
+- `npm run api`: API local para Stripe
 - `npm run dev`: entorno de desarrollo
+- `npm run dev:full`: frontend + API de Stripe a la vez
 - `npm run build`: build de produccion
 - `npm run lint`: revision con ESLint
 - `npm run preview`: previsualizacion local del build
+
+## Stripe
+
+La integracion de pago usa Stripe Checkout con una API propia para no exponer la clave secreta en el frontend.
+
+1. Crea un archivo `.env` a partir de `.env.example`
+2. Añade tu clave `STRIPE_SECRET_KEY`
+3. Ejecuta `npm run dev:full`
+
+La API crea una suscripcion mensual de 60 euros y redirige a Stripe para completar el pago.
 
 ## Estado actual
 
