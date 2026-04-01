@@ -27,6 +27,18 @@ La integracion de pago usa Stripe Checkout con una API propia para no exponer la
 
 La API crea una suscripcion mensual de 60 euros y redirige a Stripe para completar el pago.
 
+## Netlify
+
+Para que el pago funcione en Netlify no basta con desplegar solo el frontend estatico: tambien hace falta una funcion serverless para el endpoint de checkout.
+
+Variables de entorno necesarias en Netlify:
+
+- `STRIPE_SECRET_KEY`
+- `MONGODB_URI`
+- `MONGODB_DB_NAME`
+
+El proyecto incluye una funcion en `netlify/functions/create-checkout-session.js` y una redireccion para que `POST /api/create-checkout-session` funcione tambien en produccion.
+
 ## Estado actual
 
 - Landing inicial en espanol

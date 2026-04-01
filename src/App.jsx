@@ -165,7 +165,14 @@ function App() {
         body: JSON.stringify(checkoutForm),
       })
 
-      const data = await response.json()
+      const responseText = await response.text()
+      let data = null
+
+      try {
+        data = responseText ? JSON.parse(responseText) : {}
+      } catch {
+        throw new Error('La API no ha devuelto JSON. Revisa que el backend o la funcion de Netlify esten desplegados.')
+      }
 
       if (!response.ok || !data.url) {
         throw new Error(data.error || 'No se pudo iniciar el pago con Stripe.')
