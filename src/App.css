@@ -58,10 +58,11 @@
 }
 
 .brand-mark {
-  width: 82px;
-  height: 82px;
-  object-fit: cover;
-  border-radius: 18px;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  border-radius: 20px;
+  background: rgba(249, 252, 255, 0.92);
   box-shadow: 0 16px 30px rgba(21, 44, 70, 0.1);
 }
 
@@ -731,6 +732,7 @@
   .brand-mark {
     width: 68px;
     height: 68px;
+    border-radius: 18px;
   }
 
   .hero-copy h1 {

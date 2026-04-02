@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import logoImage from './assets/serviparking-logo.svg'
+
+const logoImage =
+  '/freepik_quiero-un-logo-profesional-para-mi-pagina-web-de-alquiler-de-caravanas-se-llama-serviparking-debe-de-ser-de-colores-azules_0001.png'
 
 const apiBaseUrl =
   import.meta.env.VITE_API_BASE_URL ||
@@ -232,7 +234,7 @@ function App() {
           onClick={openCheckoutModal}
           disabled={isRedirectingToCheckout}
         >
-          {isRedirectingToCheckout ? 'Redirigiendo...' : 'Pagar plaza'}
+          {isRedirectingToCheckout ? 'Redirigiendo...' : 'Reservar plaza'}
         </button>
       </header>
 
